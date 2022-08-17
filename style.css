@@ -1,0 +1,61 @@
+body
+{
+    background-color: rgb(119, 119, 246);
+    font: normal 20pt Arial;
+    text-align: center;
+}
+section
+{
+    background-color: lightgray;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+#resultadoDiv
+{
+    text-align: left;
+    font-size: 15pt;
+}
+#redirect
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+h1
+{
+    margin: 10px;
+}
+
+/* .input
+{
+    -webkit-transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 1000ms;
+
+    transform: translate(0, 0);
+    transition: transform 1000ms;
+}
+.move 
+{
+    -webkit-transform: translate(50px, 50px);
+    transform: translate(50px, 50px);
+} */
+
+.move
+{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
