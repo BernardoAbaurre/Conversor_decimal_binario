@@ -27,7 +27,7 @@ function calcular()
         {
             binario += 2**i
         }
-        else if(inpBinario.substring(c-1, c) != '0')
+        else if(inpBinario.substring(c-1, c) != '0' || inpBinario == "")
         {
             animar()
             binario = 0
