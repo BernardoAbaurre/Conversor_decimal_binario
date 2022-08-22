@@ -27,20 +27,6 @@ h1
     margin: 10px;
 }
 
-/* .input
-{
-    -webkit-transform: translate(0, 0);
-    -webkit-transition: -webkit-transform 1000ms;
-
-    transform: translate(0, 0);
-    transition: transform 1000ms;
-}
-.move 
-{
-    -webkit-transform: translate(50px, 50px);
-    transform: translate(50px, 50px);
-} */
-
 .move
 {
     animation: shake 0.5s;

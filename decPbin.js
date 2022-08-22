@@ -6,6 +6,7 @@ function calcular()
     var binario = []
     var contador = 0
 
+    // animação de erro
     function animar()
     {
         if (contador == 0)
@@ -20,11 +21,17 @@ function calcular()
             contador = 0
         }
     }
+
+    // zerar resultados
     resultado.innerHTML = 'Resultado: '
+    document.getElementById('nbits').innerHTML = 'Número de bits: '
+
+    // processamento
     if(isNaN(inpDecimalStr) == true || inpDecimalStr == "" || inpDecimal <= 0)
     {
         animar()
-        resultado.innerHTML += '0'
+        resultado.innerHTML += '-'
+        document.getElementById('nbits').innerHTML += '-'
     }
     else
     {
@@ -35,9 +42,12 @@ function calcular()
         }
         binario.push(1)
         binario = binario.reverse()
+
+        // saída
         for(var i = 0; i < binario.length; i++)
         {
             resultado.innerHTML += `${binario[i]}`
         }
+        document.getElementById('nbits').innerHTML += `${binario.length}`
     }
 }
